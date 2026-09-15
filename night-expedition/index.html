@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature OT — Tema 2 : Night Expedition</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{font-family:'Source Sans 3',sans-serif}
+  .bebas{font-family:'Bebas Neue',sans-serif}
+  .mono{font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body class="bg-[#0A0A0A] text-zinc-100 selection:bg-[#CCFF00] selection:text-black">
+<!-- TOP BAR -->
+<nav class="border-b border-zinc-800 bg-[#0A0A0A]/80 backdrop-blur sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 h-[64px] flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 bg-[#CCFF00] flex items-center justify-center text-black font-black">N</div>
+      <span class="bebas text-2xl tracking-widest">NATURE OT</span>
+      <span class="mono text-[10px] tracking-widest text-zinc-500 hidden md:inline border-l border-zinc-800 pl-3 ml-2">EST. 2013 — LEMBANG</span>
+    </div>
+    <div class="hidden md:flex items-center gap-7 mono text-[11px] tracking-widest text-zinc-400">
+      <a href="#prog" class="hover:text-[#CCFF00]">// PROGRAM</a>
+      <a href="#ops" class="hover:text-[#CCFF00]">// OPERATIONS</a>
+      <a href="#gal" class="hover:text-[#CCFF00]">// FIELD_GALLERY</a>
+    </div>
+    <a href="https://wa.me/6281324858936" class="bg-[#CCFF00] text-black px-5 py-2 mono text-xs font-bold tracking-widest hover:bg-white transition">BOOK_EXPEDITION →</a>
+  </div>
+</nav>
+
+<!-- HERO — giant type + stats overlay -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 pt-10 pb-12 grid lg:grid-cols-12 gap-8">
+  <div class="lg:col-span-7">
+    <p class="mono text-[11px] tracking-[0.3em] text-[#CCFF00]">● OUTDOOR TRAINING • TEAM BUILDING • GATHERING</p>
+    <h1 class="bebas text-[72px] lg:text-[96px] leading-[0.85] mt-4">LEARNING<br><span class="text-[#CCFF00]">BY NATURE.</span><br><span class="text-zinc-600">BUKAN SEMINAR.</span></h1>
+    <p class="text-zinc-400 mt-6 max-w-lg text-sm leading-relaxed">Kami bukan EO yang hanya sewa tenda. 13 tahun di lapangan Lembang — survival, offroad, rafting, paintball — dirancang untuk bikin tim kamu benar-benar bergerak.</p>
+    <div class="flex gap-3 mt-8">
+      <a href="#prog" class="bg-white text-black px-7 py-3 mono text-xs font-bold tracking-widest hover:bg-[#CCFF00] transition">LIHAT PAKET →</a>
+      <a href="#" class="border border-zinc-700 px-7 py-3 mono text-xs font-bold tracking-widest hover:border-white transition">DOWNLOAD COMPANY PROFILE</a>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mt-10 border-t border-zinc-800 pt-6">
+      <div><p class="bebas text-4xl text-[#CCFF00]">13+</p><p class="mono text-[10px] tracking-widest text-zinc-500">YEARS ACTIVE</p></div>
+      <div><p class="bebas text-4xl text-white">20+</p><p class="mono text-[10px] tracking-widest text-zinc-500">FIELD CREW</p></div>
+      <div><p class="bebas text-4xl text-white">1K+</p><p class="mono text-[10px] tracking-widest text-zinc-500">MISSIONS DONE</p></div>
+    </div>
+  </div>
+  <div class="lg:col-span-5 relative">
+    <div class="rounded-2xl overflow-hidden border border-zinc-800 h-[520px] relative bg-zinc-900">
+      <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80" class="w-full h-full object-cover opacity-90">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+      <div class="absolute bottom-3 left-3 right-3 bg-[#0A0A0A] border border-zinc-800 rounded-xl p-4 flex items-center justify-between">
+        <div><p class="mono text-[10px] tracking-widest text-[#CCFF00]">BASECAMP</p><p class="font-bold text-sm">Jl. Raya Lembang No.162</p><p class="text-xs text-zinc-500">Gudang Kahuripan, Bandung Barat</p></div>
+        <span class="w-10 h-10 rounded-full bg-[#CCFF00] flex items-center justify-center text-black">↗</span>
+      </div>
+    </div>
+    <!-- floating badge -->
+    <div class="absolute -top-3 -right-3 bg-[#CCFF00] text-black mono text-[10px] tracking-widest px-3 py-2 rotate-3">LEGALITAS TERVERIFIKASI ✓</div>
+  </div>
+</section>
+
+<!-- OPS STRIP -->
+<section id="ops" class="border-y border-zinc-800 bg-zinc-900/50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-wrap gap-6 mono text-[11px] tracking-widest text-zinc-400">
+    <span>⚡ DOSEN & FASILITATOR BERSERTIFIKAT</span><span class="text-zinc-700">/</span>
+    <span>⚡ TEKNIK LAPANGAN PROFESIONAL</span><span class="text-zinc-700">/</span>
+    <span>⚡ LEARNING BY DOING, BUKAN CERAMAH</span>
+  </div>
+</section>
+
+<!-- PROGRAMS — BENTO GRID with numbers -->
+<section id="prog" class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+  <div class="flex justify-between items-end mb-6">
+    <h2 class="bebas text-5xl">ARSENAL / <span class="text-[#CCFF00]">08 PROGRAM</span></h2>
+    <p class="mono text-xs text-zinc-500 hidden md:block">PILIH MODE — KAMI SESUAIKAN SKENARIO</p>
+  </div>
+  <div class="grid md:grid-cols-12 gap-4 auto-rows-[180px]">
+    <div class="md:col-span-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-[#CCFF00]/50 transition">
+      <div><p class="mono text-[10px] tracking-widest text-[#CCFF00]">01 — TRAINING</p><h3 class="bebas text-3xl mt-2">LEADERSHIP<br> & SDM</h3><p class="text-xs text-zinc-500 mt-2">Sales Training, Pengembangan SDM</p></div>
+      <span class="mono text-xs text-zinc-600">→ EXPLORE</span>
+    </div>
+    <div class="md:col-span-3 bg-[#CCFF00] rounded-2xl p-6 flex flex-col justify-between text-black">
+      <div><p class="mono text-[10px] tracking-widest">02 — FUN</p><h3 class="bebas text-3xl mt-2">AMAZING<br>RACE</h3></div>
+      <p class="mono text-xs">TREASURE HUNT / CITY BONDING</p>
+    </div>
+    <div class="md:col-span-4 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-600 transition">
+      <div><p class="mono text-[10px] tracking-widest text-zinc-500">03 — EDUCATIONAL</p><h3 class="bebas text-2xl mt-2">CAMPING &<br>SURVIVAL KIDS</h3><p class="text-xs text-zinc-500 mt-2">LDKM • LDKS</p></div>
+      <span class="mono text-xs text-zinc-600">→ EXPLORE</span>
+    </div>
+    <div class="md:col-span-4 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-600 transition">
+      <div><p class="mono text-[10px] tracking-widest text-zinc-500">04 — OUTDOOR</p><h3 class="bebas text-2xl mt-2">HIKING /<br>FAMILY SURVIVAL</h3></div>
+      <span class="mono text-xs text-zinc-600">→ EXPLORE</span>
+    </div>
+    <div class="md:col-span-4 bg-white text-black rounded-2xl p-6 flex flex-col justify-between">
+      <div><p class="mono text-[10px] tracking-widest text-zinc-500">05 — EL PROGRAM</p><h3 class="bebas text-2xl mt-2">TEAM BUILDING<br>CAPACITY</h3><p class="text-xs text-zinc-600 mt-2">Motivation Training</p></div>
+      <span class="mono text-xs">→ EXPLORE</span>
+    </div>
+    <div class="md:col-span-4 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-600 transition">
+      <div><p class="mono text-[10px] tracking-widest text-zinc-500">06 — CULTURE</p><h3 class="bebas text-2xl mt-2">ANGKLUNG<br>DESA WISATA</h3><p class="text-xs text-zinc-500 mt-2">Kecak Dance with EL</p></div>
+      <span class="mono text-xs text-zinc-600">→ EXPLORE</span>
+    </div>
+    <div class="md:col-span-6 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex items-center justify-between hover:border-zinc-600 transition">
+      <div><p class="mono text-[10px] tracking-widest text-zinc-500">07 — EL ACTIVITY</p><h3 class="bebas text-2xl mt-2">OFFROAD • PAINTBALL<br>ARCHERY • RAFTING</h3></div>
+      <div class="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center">↗</div>
+    </div>
+    <div class="md:col-span-6 bg-[#CCFF00] rounded-2xl p-6 flex items-center justify-between text-black">
+      <div><p class="mono text-[10px] tracking-widest">08 — GATHERING</p><h3 class="bebas text-3xl mt-2">COMPANY &<br>FAMILY GATHERING</h3><p class="mono text-xs mt-2">OUTING • FULL SERVICE</p></div>
+      <a href="https://wa.me/6281324858936" class="bg-black text-[#CCFF00] px-5 py-3 mono text-xs font-bold">BOOK →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY — ticker -->
+<section id="gal" class="border-t border-zinc-800 py-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <p class="mono text-[11px] tracking-[0.3em] text-zinc-500 mb-4">FIELD_GALLERY — REAL MISSIONS, NO STOCK</p>
+    <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" class="w-[360px] h-[220px] object-cover rounded-xl snap-start shrink-0 border border-zinc-800">
+      <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=600&q=80" class="w-[360px] h-[220px] object-cover rounded-xl snap-start shrink-0 border border-zinc-800">
+      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" class="w-[360px] h-[220px] object-cover rounded-xl snap-start shrink-0 border border-zinc-800">
+      <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80" class="w-[360px] h-[220px] object-cover rounded-xl snap-start shrink-0 border border-zinc-800">
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#CCFF00] py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+    <h3 class="bebas text-4xl text-black leading-none">SIAP TURUN<br>LAPANGAN?</h3>
+    <div class="flex gap-3">
+      <a href="https://wa.me/6281324858936" class="bg-black text-[#CCFF00] px-8 py-4 mono text-xs font-bold tracking-widest">WHATSAPP 0813-2485-8936 →</a>
+      <a href="tel:081324858936" class="border-2 border-black text-black px-8 py-4 mono text-xs font-bold tracking-widest">CALL</a>
+    </div>
+  </div>
+</section>
+<footer class="bg-black text-zinc-600 text-center py-6 mono text-[10px] tracking-widest border-t border-zinc-900">© 2026 NATURE OT • JL. RAYA LEMBANG 162 • LEARNING BY NATURE</footer>
+</body>
+</html>
